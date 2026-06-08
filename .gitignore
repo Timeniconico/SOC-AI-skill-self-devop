@@ -1,0 +1,44 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.csr
+*.jks
+*.keystore
+
+# Cloud credentials
+.aws/
+.azure/
+.gcp/
+config/gcloud/
+application_default_credentials.json
+kubeconfig
+*.kubeconfig
+.kube/
+docker-compose.override.yml
+
+# Terraform sensitive state
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+
+# Runtime and logs
+logs/
+*.log
+*.pid
+tmp/
+temp/
+.cache/
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
